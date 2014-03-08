@@ -1252,45 +1252,45 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     int64 nSubsidy = nStartSubsidy;
     if(nHeight < 1500)//ASIC instamining protection
     {
-       nSubsidy = 0 * COIN;
+       nSubsidy = 0.1 * COIN;
         }
-    if(nHeight < 3504000)//first year
+    if(nHeight > 3504000)//first year
     {
        nSubsidy = 2 * COIN;
         }
-    if(nHeight < 7008000)//second year
+    if(nHeight > 7008000)//second year
     {
        nSubsidy = 1 * COIN;
         }
-    if(nHeight < 10512000)//third year
+    if(nHeight > 10512000)//third year
     {
        nSubsidy = 0.5 * COIN;
         }
-    if(nHeight < 14016000)//fourth year
+    if(nHeight > 14016000)//fourth year
     {
        nSubsidy = 1 * COIN;
         }
-    if(nHeight < 17520000)//fifth year
+    if(nHeight > 17520000)//fifth year
     {
        nSubsidy = 0.5 * COIN;
         }
-    if(nHeight < 21024000)//sixth year
+    if(nHeight > 21024000)//sixth year
     {
        nSubsidy = 1 * COIN;
         }
-    if(nHeight < 24528000)//7y
+    if(nHeight > 24528000)//7y
     {
        nSubsidy = 0.5 * COIN;
         }
-    if(nHeight < 28032000)//8y
+    if(nHeight > 28032000)//8y
     {
        nSubsidy = 1 * COIN;
         }
-    if(nHeight < 31536000)//9y
+    if(nHeight > 31536000)//9y
     {
        nSubsidy = 0.5 * COIN;
         }
-    if(nHeight < 35040000)//10y
+    if(nHeight > 35040000)//10y
     {
        nSubsidy = 0.25 * COIN;
         }
